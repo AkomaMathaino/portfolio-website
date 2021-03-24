@@ -13,7 +13,7 @@ document.querySelectorAll('.link').forEach(item => {
 const button = document.getElementById('dark')
 let page = 'light';
 
-button.onmouseover = function() {
+button.onpointerover = function() {
     button.style.cursor = 'pointer';
     if (page === 'light') {
         button.style.color = 'black';
@@ -24,7 +24,7 @@ button.onmouseover = function() {
     }
 };
 
-button.onmouseout = function() {
+button.onpointerout = function() {
     if (page === 'light') {
         button.style.color = 'white';
         button.style.backgroundColor = 'midnightblue';
@@ -40,6 +40,7 @@ button.onclick = function() {
         document.getElementById('header').style.backgroundColor = 'darkblue';
         document.getElementById('page').style.color = 'white';
         document.getElementById('phone').style.color = 'white';
+        button.innerHTML = 'Light Mode';
         document.querySelectorAll('.link').forEach(item => {
             item.style.color = 'lightblue';
         });
@@ -49,6 +50,7 @@ button.onclick = function() {
         document.getElementById('header').style.backgroundColor = 'lightblue';
         document.getElementById('page').style.color = 'black';
         document.getElementById('phone').style.color = 'black';
+        button.innerHTML = 'Dark Mode';
         document.querySelectorAll('.link').forEach(item => {
             item.style.color = 'darkblue';
         });

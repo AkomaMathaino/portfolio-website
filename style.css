@@ -31,6 +31,8 @@ header h2 {
     background-color: midnightblue;
     color: white;
     padding: 1%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 main {
