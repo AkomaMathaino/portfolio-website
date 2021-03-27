@@ -16,7 +16,7 @@ header {
     top: 0%;
     left: 0%;
     text-align: center;
-    background-color: lightblue;
+    background-color: #bfbfbf;
 }
 
 #dark {
@@ -25,7 +25,7 @@ header {
 
 header h2 {
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     left: 7%;
     transform: translate(-50%, 0);
     background-color: midnightblue;
@@ -33,6 +33,7 @@ header h2 {
     padding: 1%;
     -webkit-user-select: none;
     user-select: none;
+    width: 8.616437rem;
 }
 
 main {
@@ -45,6 +46,15 @@ main {
 a {
     text-decoration: none;
     color: darkblue;
+}
+
+.skills ul {
+    padding-inline-start: 0;
+}
+
+.skills li {
+    display: inline-block;
+    padding: 2% 4% 2% 0;
 }
 
 .contact-information {
@@ -65,4 +75,37 @@ footer {
     display: block;
     width: 100%;
     height: 12rem;
+}
+
+@media screen and (max-width: 1140px) {
+    header {
+        display: block;
+        height: 6rem;
+        width: 100%;
+        z-index: 100;
+        text-align: initial;
+    }
+
+    header h1, header h2 {
+        display: inline-flex;
+        position: static;
+        
+    }
+
+    header h1 {
+        position: absolute;
+        left: 2rem;
+        align-items: center;
+    }
+
+    header h2 {
+        position: absolute;
+        right: -2rem;
+        left: initial;
+        align-items: center;
+    }
+
+    main {
+        top: 6rem;
+    }
 }

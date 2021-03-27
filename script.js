@@ -37,7 +37,7 @@ button.onpointerout = function() {
 button.onclick = function() {
     if (page === 'light') {
         document.getElementById('page').style.backgroundColor = 'black';
-        document.getElementById('header').style.backgroundColor = 'darkblue';
+        document.getElementById('header').style.backgroundColor = '#494949';
         document.getElementById('page').style.color = 'white';
         document.getElementById('phone').style.color = 'white';
         button.style.backgroundColor = 'midnightblue';
@@ -49,7 +49,7 @@ button.onclick = function() {
         page = 'dark';
     } else {
         document.getElementById('page').style.backgroundColor = 'white';
-        document.getElementById('header').style.backgroundColor = 'lightblue';
+        document.getElementById('header').style.backgroundColor = '#bfbfbf';
         document.getElementById('page').style.color = 'black';
         document.getElementById('phone').style.color = 'black';
         button.style.backgroundColor = 'steelblue';
